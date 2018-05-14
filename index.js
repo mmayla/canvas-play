@@ -34,10 +34,10 @@ const drawTable = (image, from, columns, rowsCount, rowHeight, color = 0x000000F
 const demo = () => {
   const color = Jimp.rgbaToInt(247, 134, 206, 255);
   console.log(color.toString(16));
-  const image = new Jimp(500, 1000, 0xFFFFFFFF);
+  const image = new Jimp(700, 1100, 0xFFFFFFFF);
 
   // drawLine(image, [0, 50], [500, 50], 0x000000FF, 3);
-  drawTable(image, [10, 30], [20, 100, 50], 5, 50, 0x000000FF, 1);
+  drawTable(image, [50, 30], [250, 100, 100, 100], 20, 50, 0x000000FF, 2);
 
   image.write('dist/test.jpg');
 };
