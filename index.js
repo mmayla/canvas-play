@@ -8,7 +8,7 @@ const drawLine = (image, from, to, color = 0x000000FF, stroke = 1) => {
 }
 
 const drawTable = (image, from, width, columns, rowsCount, rowHeight, stroke, color) => {
-  
+
 }
 
 const demo = () => {
@@ -18,7 +18,7 @@ const demo = () => {
 
   drawLine(image, [0, 50], [500, 50], 0x000000FF, 3);
 
-  image.write('test.jpg');
+  image.write('dist/test.jpg');
 };
 
 demo();
